@@ -296,17 +296,7 @@ body {
   font-size: 0.875rem;
   font-weight: 400;
   color: #c33c42;
-}
-
-.button {
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  padding: 0px 0px;
-}
-
-.button._fw {
-  width: 100%;
+  padding: 3px 20px 3px 20px;
 }
 
 input[type=text],
@@ -540,9 +530,11 @@ textarea.input {
 }
 
 .page__gallery {
+  position: relative;
   background-color: #c33c42;
   padding-left: 0px;
   padding-right: 0px;
+  z-index: 2;
 }
 
 .page__contact {
@@ -1398,15 +1390,15 @@ textarea.input {
 
 .contact__img {
   position: absolute;
-  top: 140px;
-  right: 4%;
+  top: 0px;
+  right: 3%;
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
-  -webkit-transform: scale(1.6);
-      -ms-transform: scale(1.6);
-          transform: scale(1.6);
+  -webkit-transform: scale(1.2);
+      -ms-transform: scale(1.2);
+          transform: scale(1.2);
 }
 
 .form-message__items {
@@ -1417,7 +1409,7 @@ textarea.input {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  row-gap: 20px;
+  row-gap: 9px;
   max-width: 670px;
 }
 
@@ -1430,15 +1422,6 @@ textarea.input {
           column-gap: 20px;
 }
 
-.form-message__block-item {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-flex: 1;
-      -ms-flex: 1 1 100%;
-          flex: 1 1 100%;
-}
-
 .form-message__contacts {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1448,11 +1431,20 @@ textarea.input {
           column-gap: 20px;
 }
 
+.form-message__block-item {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: minmax(100%, 325px);
+  grid-template-columns: minmax(100%, 325px);
+  -ms-grid-rows: 50px 20px;
+  grid-template-rows: 50px 20px;
+}
+
 .form-message__item {
-  -webkit-box-flex: 1;
-      -ms-flex: 1 1 100%;
-          flex: 1 1 100%;
-  height: 50px;
+  max-width: 100%;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 50px;
+          flex: 0 0 50px;
   padding: 0px 0px 0px 20px;
   color: #525252;
 }
@@ -2005,6 +1997,11 @@ textarea.input {
   .form-message__items {
     max-width: 100%;
   }
+
+  .form-message__block-item {
+    -ms-grid-columns: minmax(100%, 435px);
+    grid-template-columns: minmax(100%, 435px);
+  }
 }
 
 @media all and (max-width: 767px) {
@@ -2441,13 +2438,13 @@ textarea.input {
   .form-message__name {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
-    row-gap: 20px;
+    row-gap: 9px;
   }
 
   .form-message__contacts {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
-    row-gap: 20px;
+    row-gap: 9px;
   }
 }
 
