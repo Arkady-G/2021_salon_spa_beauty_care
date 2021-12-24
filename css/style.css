@@ -1384,7 +1384,8 @@ textarea.input {
 }
 
 .contact__body {
-  padding: 105px 0px 105px 0px;
+  padding-left: 0px;
+  padding-right: 0px;
 }
 
 .contact__description {
@@ -1487,7 +1488,7 @@ textarea.input {
 }
 
 .form-message__item-message {
-  padding: 20px 0px 0px 20px;
+  padding: 20px;
 }
 
 .form-message__item-message::-webkit-input-placeholder {
@@ -1880,6 +1881,14 @@ textarea.input {
     font-size: 2.9375rem;
   }
 
+  .contact__body {
+    padding-top: 6.5625rem;
+  }
+
+  .contact__body {
+    padding-bottom: 6.5625rem;
+  }
+
   .contact__description:not(:last-child) {
     margin-bottom: 4.6875rem;
   }
@@ -1985,6 +1994,16 @@ textarea.input {
 
   .description {
     padding-bottom: 1.875rem;
+  }
+}
+
+@media (max-width: 899.98px) {
+  .contact__image {
+    display: none;
+  }
+
+  .form-message__items {
+    max-width: 100%;
   }
 }
 
@@ -2123,6 +2142,14 @@ textarea.input {
 
   .button-arrow__item {
     font-size: 2.375rem;
+  }
+
+  .contact__body {
+    padding-top: 1.875rem;
+  }
+
+  .contact__body {
+    padding-bottom: 1.875rem;
   }
 
   .contact__description:not(:last-child) {
@@ -2410,6 +2437,18 @@ textarea.input {
   .clients-reviews__text::before {
     display: none;
   }
+
+  .form-message__name {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    row-gap: 20px;
+  }
+
+  .form-message__contacts {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    row-gap: 20px;
+  }
 }
 
 @media (min-width: 20em) and (max-width: 75em) {
@@ -2533,6 +2572,14 @@ textarea.input {
 
   .button-arrow__item {
     font-size: calc(2.375rem + 0.5625 * (((100vw - 20rem)) / ((55))));
+  }
+
+  .contact__body {
+    padding-top: calc(1.875rem + 4.6875 * (((100vw - 20rem)) / ((55))));
+  }
+
+  .contact__body {
+    padding-bottom: calc(1.875rem + 4.6875 * (((100vw - 20rem)) / ((55))));
   }
 
   .contact__description:not(:last-child) {
