@@ -782,6 +782,16 @@ textarea.input {
   padding-bottom: 58.2%;
 }
 
+.block-experts__image::before {
+  position: absolute;
+  content: "";
+  width: 85%;
+  height: 87%;
+  background-color: #c33c42;
+  bottom: -10px;
+  left: -10px;
+}
+
 .block-experts__img {
   position: absolute;
   top: 0;
@@ -1231,6 +1241,16 @@ textarea.input {
   min-height: 97px;
 }
 
+.clients-reviews__image::before {
+  position: absolute;
+  content: "";
+  bottom: -5px;
+  left: -5px;
+  width: 95%;
+  height: 95%;
+  background-color: #c33c42;
+}
+
 .clients-reviews__photo {
   position: absolute;
   top: 0px;
@@ -1618,7 +1638,7 @@ textarea.input {
   top: 0;
   left: 0;
   width: 100%;
-  height: 100%;
+  max-height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
   -o-object-position: bottom;
@@ -1628,6 +1648,16 @@ textarea.input {
 .map__map {
   position: absolute;
   padding: 0px 10px;
+}
+
+.map__map::before {
+  position: absolute;
+  content: "";
+  bottom: -11px;
+  left: 0;
+  width: 94%;
+  height: 88%;
+  background-color: #c33c42;
 }
 
 .hystmodal__opened {
