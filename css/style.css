@@ -788,8 +788,8 @@ textarea.input {
   width: 85%;
   height: 87%;
   background-color: #c33c42;
-  bottom: -10px;
-  left: -10px;
+  bottom: -14px;
+  left: -14px;
 }
 
 .block-experts__img {
@@ -1244,8 +1244,8 @@ textarea.input {
 .clients-reviews__image::before {
   position: absolute;
   content: "";
-  bottom: -5px;
-  left: -5px;
+  bottom: -6px;
+  left: -6px;
   width: 95%;
   height: 95%;
   background-color: #c33c42;
@@ -1653,8 +1653,8 @@ textarea.input {
 .map__map::before {
   position: absolute;
   content: "";
-  bottom: -11px;
-  left: 0;
+  bottom: -15px;
+  left: -4.5px;
   width: 94%;
   height: 88%;
   background-color: #c33c42;
