@@ -5,7 +5,7 @@
 	<title>SPA Salon Beauty Care</title>
 	<meta charset="UTF-8">
 	<meta name="format-detection" content="telephone=no">
-	<link rel="stylesheet" href="css/style.min.css?_v=20211230105057">
+	<link rel="stylesheet" href="css/style.min.css?_v=20220101011926">
 	<link rel="shortcut icon" href="favicon.ico">
 	<!-- <meta name="robots" content="noindex, nofollow"> -->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -18,30 +18,30 @@
 				<div class="header__body">
 					<div class="header__menu menu">
 						<div class="menu__logo">
-							<a href="#/" class="menu__link-logo">
-								<picture><source srcset="img/logo/logo-header.webp" type="image/webp"><img src="img/logo/logo-header.png?_v=1640850657251" alt="Logo" class="menu__img-logo"></picture>
+							<a data-goto="main" href="#main" class="menu__link-logo">
+								<picture><source srcset="img/logo/logo-header.webp" type="image/webp"><img src="img/logo/logo-header.png?_v=1640989166749" alt="Logo" class="menu__img-logo"></picture>
 								<div class="menu__name-logo">Beauty <span class="menu__red-name-logo">Care</span></div>
 							</a>
 						</div>
 						<nav class="menu__body">
 							<ul class="menu__list">
 								<li class="menu__item">
-									<a href="#/" class="menu__link">Главная</a>
+									<a data-goto="main" href="#main" class="menu__link">Главная</a>
 								</li>
 								<li class="menu__item">
-									<a href="#/" class="menu__link">О центре</a>
+									<a data-goto="center" href="#center" class="menu__link">О центре</a>
 								</li>
 								<li class="menu__item">
-									<a href="#/" class="menu__link">Услуги</a>
+									<a data-goto="catalog" href="#catalog" class="menu__link">Услуги</a>
 								</li>
 								<li class="menu__item">
-									<a href="#/" class="menu__link">Бутик</a>
+									<a data-goto="shop" href="#shop" class="menu__link">Бутик</a>
 								</li>
 								<li class="menu__item">
-									<a href="#/" class="menu__link">Галерея</a>
+									<a data-goto="gallery" href="#gallery" class="menu__link">Галерея</a>
 								</li>
 								<li class="menu__item">
-									<a href="#/" class="menu__link">Контакты</a>
+									<a data-goto="contact" href="#contact" class="menu__link">Контакты</a>
 								</li>
 							</ul>
 						</nav>
@@ -52,8 +52,8 @@
 				</div>
 			</div>
 		</header>
-		<main class="page">
-			<section class="page__block-main block-main">
+		<main class="mainpage">
+			<section id="main" class="mainpage__block-main block-main">
 				<div class="block-main__container">
 					<div class="block-main__body">
 						<div class="block-main__description">
@@ -68,15 +68,15 @@
 						</div>
 					</div>
 					<div class="block-main__bg-image">
-						<picture><source srcset="img/bg/main_bg.webp" type="image/webp"><img src="img/bg/main_bg.jpg?_v=1640850657251" alt="Image" class="block-main__bg-img"></picture>
+						<picture><source srcset="img/bg/main_bg.webp" type="image/webp"><img src="img/bg/main_bg.jpg?_v=1640989166749" alt="Image" class="block-main__bg-img"></picture>
 					</div>
 				</div>
 			</section>
-			<section class="page__block-experts block-experts">
+			<section id="center" class="mainpage__block-experts block-experts">
 				<div class="block-experts__container">
 					<div class="block-experts__body">
 						<div class="block-experts__image">
-							<picture><source srcset="img/experts/expert.webp" type="image/webp"><img data-src="img/experts/expert.jpg?_v=1640850657251" alt="Image" class="block-experts__img"></picture>
+							<picture><source srcset="img/experts/expert.webp" type="image/webp"><img data-src="img/experts/expert.jpg?_v=1640989166749" alt="Image" class="block-experts__img"></picture>
 						</div>
 						<div class="block-experts__description">
 							<h2 class="block-experts__title title">Наши <span class="block-experts__red red">эксперты</span></h2>
@@ -124,7 +124,7 @@
 					</div>
 				</div>
 			</section>
-			<section class="page__catalog catalog">
+			<section id="catalog" class="mainpage__catalog catalog">
 				<div class="catalog__container">
 					<div class="catalog__body">
 						<div class="catalog__header header-block">
@@ -135,7 +135,7 @@
 						<div class="catalog__items">
 							<article class="catalog__item item-card">
 								<a href="#/" class="item-card__link-image">
-									<picture><source srcset="img/catalog_image/massage_therapy.webp" type="image/webp"><img data-src="img/catalog_image/massage_therapy.jpg?_v=1640850657251" alt="Image" class="item-card__image"></picture>
+									<picture><source srcset="img/catalog_image/massage_therapy.webp" type="image/webp"><img data-src="img/catalog_image/massage_therapy.jpg?_v=1640989166749" alt="Image" class="item-card__image"></picture>
 								</a>
 								<div class="item-card__description">
 									<h3 class="item-card__title">Лечебный массаж</h3>
@@ -159,7 +159,7 @@
 							</article>
 							<article class="catalog__item item-card">
 								<a href="#/" class="item-card__link-image">
-									<picture><source srcset="img/catalog_image/manicure_03.webp" type="image/webp"><img data-src="img/catalog_image/manicure_03.jpg?_v=1640850657251" alt="Image" class="item-card__image"></picture>
+									<picture><source srcset="img/catalog_image/manicure_03.webp" type="image/webp"><img data-src="img/catalog_image/manicure_03.jpg?_v=1640989166749" alt="Image" class="item-card__image"></picture>
 								</a>
 								<div class="item-card__description">
 									<h3 class="item-card__title">Маникюр</h3>
@@ -183,7 +183,7 @@
 							</article>
 							<article class="catalog__item item-card">
 								<a href="#/" class="item-card__link-image">
-									<picture><source srcset="img/catalog_image/massage_stone_02.webp" type="image/webp"><img data-src="img/catalog_image/massage_stone_02.jpg?_v=1640850657251" alt="Image" class="item-card__image"></picture>
+									<picture><source srcset="img/catalog_image/massage_stone_02.webp" type="image/webp"><img data-src="img/catalog_image/massage_stone_02.jpg?_v=1640989166749" alt="Image" class="item-card__image"></picture>
 								</a>
 								<div class="item-card__description">
 									<h3 class="item-card__title">Стоун-массаж</h3>
@@ -207,7 +207,7 @@
 							</article>
 							<article class="catalog__item item-card">
 								<a href="#/" class="item-card__link-image">
-									<picture><source srcset="img/catalog_image/makeup_01.webp" type="image/webp"><img data-src="img/catalog_image/makeup_01.jpg?_v=1640850657251" alt="Image" class="item-card__image"></picture>
+									<picture><source srcset="img/catalog_image/makeup_01.webp" type="image/webp"><img data-src="img/catalog_image/makeup_01.jpg?_v=1640989166749" alt="Image" class="item-card__image"></picture>
 								</a>
 								<div class="item-card__description">
 									<h3 class="item-card__title">Макияж</h3>
@@ -231,7 +231,7 @@
 							</article>
 							<article class="catalog__item item-card">
 								<a href="#/" class="item-card__link-image">
-									<picture><source srcset="img/catalog_image/pedicur_02.webp" type="image/webp"><img data-src="img/catalog_image/pedicur_02.jpeg?_v=1640850657251" alt="Image" class="item-card__image"></picture>
+									<picture><source srcset="img/catalog_image/pedicur_02.webp" type="image/webp"><img data-src="img/catalog_image/pedicur_02.jpeg?_v=1640989166749" alt="Image" class="item-card__image"></picture>
 								</a>
 								<div class="item-card__description">
 									<h3 class="item-card__title">Педикюр</h3>
@@ -255,7 +255,7 @@
 							</article>
 							<article class="catalog__item item-card">
 								<a href="#/" class="item-card__link-image">
-									<picture><source srcset="img/catalog_image/luxury_facial_02.webp" type="image/webp"><img data-src="img/catalog_image/luxury_facial_02.jpeg?_v=1640850657251" alt="Image" class="item-card__image"></picture>
+									<picture><source srcset="img/catalog_image/luxury_facial_02.webp" type="image/webp"><img data-src="img/catalog_image/luxury_facial_02.jpeg?_v=1640989166749" alt="Image" class="item-card__image"></picture>
 								</a>
 								<div class="item-card__description">
 									<h3 class="item-card__title">Уход за лицом</h3>
@@ -281,7 +281,7 @@
 					</div>
 				</div>
 			</section>
-			<section class="page__treatment treatment">
+			<section class="mainpage__treatment treatment">
 				<div class="treatment__container treatment__container_left">
 					<div class="treatment__body">
 						<div class="treatment__video">
@@ -302,7 +302,7 @@
 					</div>
 				</div>
 			</section>
-			<section class="page__collection collection">
+			<section id="shop" class="mainpage__collection collection">
 				<div class="collection__container collection__container_right">
 					<div class="collection__body">
 						<div class="collection__description description">
@@ -314,12 +314,12 @@
 							</div>
 						</div>
 						<div class="collection__image">
-							<picture><source srcset="img/collection/cosmetics_05.webp" type="image/webp"><img data-src="img/collection/cosmetics_05.jpg?_v=1640850657251" alt="Image" class="collection__img"></picture>
+							<picture><source srcset="img/collection/cosmetics_05.webp" type="image/webp"><img data-src="img/collection/cosmetics_05.jpg?_v=1640989166749" alt="Image" class="collection__img"></picture>
 						</div>
 					</div>
 				</div>
 			</section>
-			<section class="page__clients-reviews clients-reviews">
+			<section class="mainpage__clients-reviews clients-reviews">
 				<div class="clients-reviews__container clients-reviews__container_middle">
 					<div class="clients-reviews__body">
 						<div class="clients-reviews__header header-block">
@@ -335,7 +335,7 @@
 								<div class="clients-reviews__swiper">
 									<div class="clients-reviews__slide">
 										<div class="clients-reviews__image">
-											<picture><source srcset="img/clients/client_01.webp" type="image/webp"><img src="img/clients/client_01.jpg?_v=1640850657251" alt="Photo" class="clients-reviews__photo"></picture>
+											<picture><source srcset="img/clients/client_01.webp" type="image/webp"><img src="img/clients/client_01.jpg?_v=1640989166749" alt="Photo" class="clients-reviews__photo"></picture>
 										</div>
 										<div class="clients-reviews__review">
 											<h3 class="clients-reviews__name-author">Ольга Смирнова</h3>
@@ -344,7 +344,7 @@
 									</div>
 									<div class="clients-reviews__slide">
 										<div class="clients-reviews__image">
-											<picture><source srcset="img/clients/client_08.webp" type="image/webp"><img src="img/clients/client_08.jpg?_v=1640850657251" alt="Photo" class="clients-reviews__photo"></picture>
+											<picture><source srcset="img/clients/client_08.webp" type="image/webp"><img src="img/clients/client_08.jpg?_v=1640989166749" alt="Photo" class="clients-reviews__photo"></picture>
 										</div>
 										<div class="clients-reviews__review">
 											<h3 class="clients-reviews__name-author">Лариса Гаранина</h3>
@@ -353,7 +353,7 @@
 									</div>
 									<div class="clients-reviews__slide">
 										<div class="clients-reviews__image">
-											<picture><source srcset="img/clients/client_03.webp" type="image/webp"><img src="img/clients/client_03.jpg?_v=1640850657251" alt="Photo" class="clients-reviews__photo"></picture>
+											<picture><source srcset="img/clients/client_03.webp" type="image/webp"><img src="img/clients/client_03.jpg?_v=1640989166749" alt="Photo" class="clients-reviews__photo"></picture>
 										</div>
 										<div class="clients-reviews__review">
 											<h3 class="clients-reviews__name-author">Ирина Донцова</h3>
@@ -362,7 +362,7 @@
 									</div>
 									<div class="clients-reviews__slide">
 										<div class="clients-reviews__image">
-											<picture><source srcset="img/clients/client_07.webp" type="image/webp"><img src="img/clients/client_07.jpg?_v=1640850657251" alt="Photo" class="clients-reviews__photo"></picture>
+											<picture><source srcset="img/clients/client_07.webp" type="image/webp"><img src="img/clients/client_07.jpg?_v=1640989166749" alt="Photo" class="clients-reviews__photo"></picture>
 										</div>
 										<div class="clients-reviews__review">
 											<h3 class="clients-reviews__name-author">Алла Губкина</h3>
@@ -371,7 +371,7 @@
 									</div>
 									<div class="clients-reviews__slide">
 										<div class="clients-reviews__image">
-											<picture><source srcset="img/clients/client_05.webp" type="image/webp"><img src="img/clients/client_05.jpg?_v=1640850657251" alt="Photo" class="clients-reviews__photo"></picture>
+											<picture><source srcset="img/clients/client_05.webp" type="image/webp"><img src="img/clients/client_05.jpg?_v=1640989166749" alt="Photo" class="clients-reviews__photo"></picture>
 										</div>
 										<div class="clients-reviews__review">
 											<h3 class="clients-reviews__name-author">Дарья Ивашова</h3>
@@ -380,7 +380,7 @@
 									</div>
 									<div class="clients-reviews__slide">
 										<div class="clients-reviews__image">
-											<picture><source srcset="img/clients/client_06.webp" type="image/webp"><img src="img/clients/client_06.jpeg?_v=1640850657251" alt="Photo" class="clients-reviews__photo"></picture>
+											<picture><source srcset="img/clients/client_06.webp" type="image/webp"><img src="img/clients/client_06.jpeg?_v=1640989166749" alt="Photo" class="clients-reviews__photo"></picture>
 										</div>
 										<div class="clients-reviews__review">
 											<h3 class="clients-reviews__name-author">Светлана Авдеева</h3>
@@ -396,28 +396,28 @@
 					</div>
 				</div>
 			</section>
-			<div class="page__brand-name brand-name">
+			<div class="mainpage__brand-name brand-name">
 				<div class="brand-name__container">
 					<div class="brand-name__body">
 						<div class="brand-name__image">
-							<picture><source srcset="img/brands_logo/avene.webp" type="image/webp"><img data-src="img/brands_logo/avene.png?_v=1640850657251" alt="logo" class="brand-name__logo"></picture>
+							<picture><source srcset="img/brands_logo/avene.webp" type="image/webp"><img data-src="img/brands_logo/avene.png?_v=1640989166749" alt="logo" class="brand-name__logo"></picture>
 						</div>
 						<div class="brand-name__image">
-							<picture><source srcset="img/brands_logo/clarins.webp" type="image/webp"><img data-src="img/brands_logo/clarins.png?_v=1640850657251" alt="logo" class="brand-name__logo"></picture>
+							<picture><source srcset="img/brands_logo/clarins.webp" type="image/webp"><img data-src="img/brands_logo/clarins.png?_v=1640989166749" alt="logo" class="brand-name__logo"></picture>
 						</div>
 						<div class="brand-name__image">
-							<picture><source srcset="img/brands_logo/filorga.webp" type="image/webp"><img data-src="img/brands_logo/filorga.png?_v=1640850657251" alt="logo" class="brand-name__logo"></picture>
+							<picture><source srcset="img/brands_logo/filorga.webp" type="image/webp"><img data-src="img/brands_logo/filorga.png?_v=1640989166749" alt="logo" class="brand-name__logo"></picture>
 						</div>
 						<div class="brand-name__image">
-							<picture><source srcset="img/brands_logo/la_roche_posay.webp" type="image/webp"><img data-src="img/brands_logo/la_roche_posay.png?_v=1640850657251" alt="logo" class="brand-name__logo"></picture>
+							<picture><source srcset="img/brands_logo/la_roche_posay.webp" type="image/webp"><img data-src="img/brands_logo/la_roche_posay.png?_v=1640989166749" alt="logo" class="brand-name__logo"></picture>
 						</div>
 						<div class="brand-name__image">
-							<picture><source srcset="img/brands_logo/uriage.webp" type="image/webp"><img data-src="img/brands_logo/uriage.png?_v=1640850657251" alt="logo" class="brand-name__logo"></picture>
+							<picture><source srcset="img/brands_logo/uriage.webp" type="image/webp"><img data-src="img/brands_logo/uriage.png?_v=1640989166749" alt="logo" class="brand-name__logo"></picture>
 						</div>
 					</div>
 				</div>
 			</div>
-			<section class="page__gallery gallery">
+			<section id="gallery" class="mainpage__gallery gallery">
 				<div class="gallery__container gallery__container_wide">
 					<div class="gallery__body">
 						<div class="gallery__header header-block">
@@ -430,52 +430,52 @@
 							<div class="gallery__gallery-swiper">
 								<div class="gallery__slide">
 									<div class="gallery__image">
-										<picture><source srcset="img/gallery/image_01.webp" type="image/webp"><img class="gallery__img" src="img/gallery/image_01.jpg?_v=1640850657251" alt="Image"></picture>
+										<picture><source srcset="img/gallery/image_01.webp" type="image/webp"><img class="gallery__img" src="img/gallery/image_01.jpg?_v=1640989166749" alt="Image"></picture>
 									</div>
 								</div>
 								<div class="gallery__slide">
 									<div class="gallery__image">
-										<picture><source srcset="img/gallery/image_02.webp" type="image/webp"><img class="gallery__img" src="img/gallery/image_02.jpg?_v=1640850657251" alt="Image"></picture>
+										<picture><source srcset="img/gallery/image_02.webp" type="image/webp"><img class="gallery__img" src="img/gallery/image_02.jpg?_v=1640989166749" alt="Image"></picture>
 									</div>
 								</div>
 								<div class="gallery__gallery-slide">
 									<div class="gallery__image">
-										<picture><source srcset="img/gallery/image_03.webp" type="image/webp"><img class="gallery__img" src="img/gallery/image_03.jpg?_v=1640850657251" alt="Image"></picture>
+										<picture><source srcset="img/gallery/image_03.webp" type="image/webp"><img class="gallery__img" src="img/gallery/image_03.jpg?_v=1640989166749" alt="Image"></picture>
 									</div>
 								</div>
 								<div class="gallery__gallery-slide">
 									<div class="gallery__image">
-										<picture><source srcset="img/gallery/image_04.webp" type="image/webp"><img class="gallery__img" src="img/gallery/image_04.jpg?_v=1640850657251" alt="Image"></picture>
+										<picture><source srcset="img/gallery/image_04.webp" type="image/webp"><img class="gallery__img" src="img/gallery/image_04.jpg?_v=1640989166749" alt="Image"></picture>
 									</div>
 								</div>
 								<div class="gallery__gallery-slide">
 									<div class="gallery__image">
-										<picture><source srcset="img/gallery/image_05.webp" type="image/webp"><img class="gallery__img" src="img/gallery/image_05.jpg?_v=1640850657251" alt="Image"></picture>
+										<picture><source srcset="img/gallery/image_05.webp" type="image/webp"><img class="gallery__img" src="img/gallery/image_05.jpg?_v=1640989166749" alt="Image"></picture>
 									</div>
 								</div>
 								<div class="gallery__gallery-slide">
 									<div class="gallery__image">
-										<picture><source srcset="img/gallery/image_06.webp" type="image/webp"><img class="gallery__img" src="img/gallery/image_06.jpg?_v=1640850657251" alt="Image"></picture>
+										<picture><source srcset="img/gallery/image_06.webp" type="image/webp"><img class="gallery__img" src="img/gallery/image_06.jpg?_v=1640989166749" alt="Image"></picture>
 									</div>
 								</div>
 								<div class="gallery__gallery-slide">
 									<div class="gallery__image">
-										<picture><source srcset="img/gallery/image_07.webp" type="image/webp"><img class="gallery__img" src="img/gallery/image_07.jpg?_v=1640850657251" alt="Image"></picture>
+										<picture><source srcset="img/gallery/image_07.webp" type="image/webp"><img class="gallery__img" src="img/gallery/image_07.jpg?_v=1640989166749" alt="Image"></picture>
 									</div>
 								</div>
 								<div class="gallery__gallery-slide">
 									<div class="gallery__image">
-										<picture><source srcset="img/gallery/image_08.webp" type="image/webp"><img class="gallery__img" src="img/gallery/image_08.jpg?_v=1640850657251" alt="Image"></picture>
+										<picture><source srcset="img/gallery/image_08.webp" type="image/webp"><img class="gallery__img" src="img/gallery/image_08.jpg?_v=1640989166749" alt="Image"></picture>
 									</div>
 								</div>
 								<div class="gallery__gallery-slide">
 									<div class="gallery__image">
-										<picture><source srcset="img/gallery/image_09.webp" type="image/webp"><img class="gallery__img" src="img/gallery/image_09.jpg?_v=1640850657251" alt="Image"></picture>
+										<picture><source srcset="img/gallery/image_09.webp" type="image/webp"><img class="gallery__img" src="img/gallery/image_09.jpg?_v=1640989166749" alt="Image"></picture>
 									</div>
 								</div>
 								<div class="gallery__gallery-slide">
 									<div class="gallery__image">
-										<picture><source srcset="img/gallery/image_10.webp" type="image/webp"><img class="gallery__img" src="img/gallery/image_10.jpg?_v=1640850657251" alt="Image"></picture>
+										<picture><source srcset="img/gallery/image_10.webp" type="image/webp"><img class="gallery__img" src="img/gallery/image_10.jpg?_v=1640989166749" alt="Image"></picture>
 									</div>
 								</div>
 							</div>
@@ -494,7 +494,7 @@
 					</div>
 				</div>
 			</section>
-			<section class="page__contact contact">
+			<section id="contact" class="mainpage__contact contact">
 				<div class="contact__container">
 					<div class="contact__body">
 						<div class="contact__description">
@@ -527,11 +527,11 @@
 							<button type="submit" class="form-message__button button-red">Отправить</button>
 						</form>
 						<div class="contact__image">
-							<picture><source srcset="img/bg/face_022.webp" type="image/webp"><img class="contact__img" data-src="img/bg/face_022.png?_v=1640850657251" alt="Image"></picture>
+							<picture><source srcset="img/bg/face_022.webp" type="image/webp"><img class="contact__img" data-src="img/bg/face_022.png?_v=1640989166749" alt="Image"></picture>
 						</div>
 					</div>
 			</section>
-			<section class="page__offer offer">
+			<section class="mainpage__offer offer">
 				<div class="offer__container">
 					<div class="offer__body">
 						<div class="offer__description-block">
@@ -562,11 +562,11 @@
 					</div>
 				</div>
 			</section>
-			<div class="page__map map">
+			<div class="mainpage__map map">
 				<div class="map__container">
 					<div class="map__body">
 						<div class="map__image-bg">
-							<picture><source srcset="img/bg_map/bg_map_01.webp" type="image/webp"><img src="img/bg_map/bg_map_01.jpg?_v=1640850657251" alt="Image" class="map__img-bg"></picture>
+							<picture><source srcset="img/bg_map/bg_map_01.webp" type="image/webp"><img src="img/bg_map/bg_map_01.jpg?_v=1640989166749" alt="Image" class="map__img-bg"></picture>
 						</div>
 						<div class="map__map">
 							<script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Adb5c67b226f69ae011e00a353d63806514816dc8673ac4de64d8f5f4b2f2f19f&amp;width=100%&amp;height=100%&amp;lang=ru_RU&amp;scroll=true"></script>
@@ -581,8 +581,8 @@
 					<div class="footer-top__body">
 						<div class="footer-top__description">
 							<div class="footer-top__logo">
-								<a href="#/" class="footer-top__link-logo">
-									<picture><source srcset="img/logo/logo-header.webp" type="image/webp"><img data-src="img/logo/logo-header.png?_v=1640850657251" alt="Logo" class="footer-top__img-logo"></picture>
+								<a data-goto="main" href="#main" class="footer-top__link-logo">
+									<picture><source srcset="img/logo/logo-header.webp" type="image/webp"><img data-src="img/logo/logo-header.png?_v=1640989166749" alt="Logo" class="footer-top__img-logo"></picture>
 									<div class="footer-top__name-logo">Beauty <span class="footer-top__red-name-logo red">Care</span></div>
 								</a>
 							</div>
@@ -616,19 +616,19 @@
 							<div class="footer-top__recent-news">
 								<a href="#/" class="footer-top__recent-news-link">
 									<div class="footer-top__recent-item-news">
-										<picture><source srcset="img/recent_news/recent_news_01.webp" type="image/webp"><img data-src="img/recent_news/recent_news_01.jpg?_v=1640850657251" alt="Image" class="footer-top__recent-news-image"></picture>
+										<picture><source srcset="img/recent_news/recent_news_01.webp" type="image/webp"><img data-src="img/recent_news/recent_news_01.jpg?_v=1640989166749" alt="Image" class="footer-top__recent-news-image"></picture>
 									</div>
 									<div class="footer-top__news-preamble">Lorem Ipsum is simply dummy text of the printing and ting industry.</div>
 								</a>
 								<a href="#/" class="footer-top__recent-news-link">
 									<div class="footer-top__recent-item-news">
-										<picture><source srcset="img/recent_news/recent_news_02.webp" type="image/webp"><img data-src="img/recent_news/recent_news_02.jpg?_v=1640850657251" alt="Image" class="footer-top__recent-news-image"></picture>
+										<picture><source srcset="img/recent_news/recent_news_02.webp" type="image/webp"><img data-src="img/recent_news/recent_news_02.jpg?_v=1640989166749" alt="Image" class="footer-top__recent-news-image"></picture>
 									</div>
 									<div class="footer-top__news-preamble">Lorem Ipsum is simply dummy text of the printing and been the industry's.</div>
 								</a>
 								<a href="#/" class="footer-top__recent-news-link">
 									<div class="footer-top__recent-item-news">
-										<picture><source srcset="img/recent_news/recent_news_03.webp" type="image/webp"><img data-src="img/recent_news/recent_news_03.jpg?_v=1640850657251" alt="Image" class="footer-top__recent-news-image"></picture>
+										<picture><source srcset="img/recent_news/recent_news_03.webp" type="image/webp"><img data-src="img/recent_news/recent_news_03.jpg?_v=1640989166749" alt="Image" class="footer-top__recent-news-image"></picture>
 									</div>
 									<div class="footer-top__news-preamble">Lorem Ipsum is simply dummy text of the printing and ting industry.</div>
 								</a>
@@ -638,39 +638,39 @@
 							<div class="footer-top__title-update title-footer">Свежие фотографии</div>
 							<div class="footer-top__latest-gallery">
 								<a href="#/" class="footer-top__latest-image-link">
-									<picture><source srcset="img/gallery/image_11.webp" type="image/webp"><img data-src="img/gallery/image_11.jpg?_v=1640850657251" alt="Image" class="footer-top__latest-image"></picture>
+									<picture><source srcset="img/gallery/image_11.webp" type="image/webp"><img data-src="img/gallery/image_11.jpg?_v=1640989166749" alt="Image" class="footer-top__latest-image"></picture>
 								</a>
 								<a href="#/" class="footer-top__latest-image-link">
-									<picture><source srcset="img/gallery/image_12.webp" type="image/webp"><img data-src="img/gallery/image_12.jpg?_v=1640850657251" alt="Image" class="footer-top__latest-image"></picture>
+									<picture><source srcset="img/gallery/image_12.webp" type="image/webp"><img data-src="img/gallery/image_12.jpg?_v=1640989166749" alt="Image" class="footer-top__latest-image"></picture>
 								</a>
 								<a href="#/" class="footer-top__latest-image-link">
-									<picture><source srcset="img/gallery/image_13.webp" type="image/webp"><img data-src="img/gallery/image_13.jpg?_v=1640850657251" alt="Image" class="footer-top__latest-image"></picture>
+									<picture><source srcset="img/gallery/image_13.webp" type="image/webp"><img data-src="img/gallery/image_13.jpg?_v=1640989166749" alt="Image" class="footer-top__latest-image"></picture>
 								</a>
 								<a href="#/" class="footer-top__latest-image-link">
-									<picture><source srcset="img/gallery/image_14.webp" type="image/webp"><img data-src="img/gallery/image_14.jpeg?_v=1640850657251" alt="Image" class="footer-top__latest-image"></picture>
+									<picture><source srcset="img/gallery/image_14.webp" type="image/webp"><img data-src="img/gallery/image_14.jpeg?_v=1640989166749" alt="Image" class="footer-top__latest-image"></picture>
 								</a>
 								<a href="#/" class="footer-top__latest-image-link">
-									<picture><source srcset="img/gallery/image_15.webp" type="image/webp"><img data-src="img/gallery/image_15.jpeg?_v=1640850657251" alt="Image" class="footer-top__latest-image"></picture>
+									<picture><source srcset="img/gallery/image_15.webp" type="image/webp"><img data-src="img/gallery/image_15.jpeg?_v=1640989166749" alt="Image" class="footer-top__latest-image"></picture>
 								</a>
 								<a href="#/" class="footer-top__latest-image-link">
-									<picture><source srcset="img/gallery/image_16.webp" type="image/webp"><img data-src="img/gallery/image_16.jpeg?_v=1640850657251" alt="Image" class="footer-top__latest-image"></picture>
+									<picture><source srcset="img/gallery/image_16.webp" type="image/webp"><img data-src="img/gallery/image_16.jpeg?_v=1640989166749" alt="Image" class="footer-top__latest-image"></picture>
 								</a>
 							</div>
 							<div class="footer-top__social">
 								<a href="#/" class="footer-top__social-link">
-									<img data-src="img/icon_font/telegram.svg?_v=1640850657251" alt="Image" class="footer-top__social-icon">
+									<img data-src="img/icon_font/telegram.svg?_v=1640989166749" alt="Image" class="footer-top__social-icon">
 								</a>
 								<a href="#/" class="footer-top__social-link">
-									<img data-src="img/icon_font/vk.svg?_v=1640850657251" alt="Image" class="footer-top__social-icon">
+									<img data-src="img/icon_font/vk.svg?_v=1640989166749" alt="Image" class="footer-top__social-icon">
 								</a>
 								<a href="#/" class="footer-top__social-link">
-									<img data-src="img/icon_font/whatsapp.svg?_v=1640850657251" alt="Image" class="footer-top__social-icon">
+									<img data-src="img/icon_font/whatsapp.svg?_v=1640989166749" alt="Image" class="footer-top__social-icon">
 								</a>
 								<a href="#/" class="footer-top__social-link">
-									<img data-src="img/icon_font/instagram.svg?_v=1640850657251" alt="Image" class="footer-top__social-icon">
+									<img data-src="img/icon_font/instagram.svg?_v=1640989166749" alt="Image" class="footer-top__social-icon">
 								</a>
 								<a href="#/" class="footer-top__social-link">
-									<img data-src="img/icon_font/facebook-f.svg?_v=1640850657251" alt="Image" class="footer-top__social-icon">
+									<img data-src="img/icon_font/facebook-f.svg?_v=1640989166749" alt="Image" class="footer-top__social-icon">
 								</a>
 							</div>
 						</div>
@@ -688,22 +688,22 @@
 							<nav class="menu-bottom__body">
 								<ul class="menu-bottom__list">
 									<li class="menu-bottom__item">
-										<a href="#/" class="menu-bottom__link">Главная</a>
+										<a data-goto="main" href="#main" class="menu-bottom__link">Главная</a>
 									</li>
 									<li class="menu-bottom__item">
-										<a href="#/" class="menu-bottom__link">О центре</a>
+										<a href="#center" class="menu-bottom__link">О центре</a>
 									</li>
 									<li class="menu-bottom__item">
-										<a href="#/" class="menu-bottom__link">Услуги</a>
+										<a href="#catalog" class="menu-bottom__link">Услуги</a>
 									</li>
 									<li class="menu-bottom__item">
-										<a href="#/" class="menu-bottom__link">Бутик</a>
+										<a href="#shop" class="menu-bottom__link">Бутик</a>
 									</li>
 									<li class="menu-bottom__item">
-										<a href="#/" class="menu-bottom__link">Галерея</a>
+										<a href="#gallery" class="menu-bottom__link">Галерея</a>
 									</li>
 									<li class="menu-bottom__item">
-										<a href="#/" class="menu-bottom__link">Контакты</a>
+										<a href="#contact" class="menu-bottom__link">Контакты</a>
 									</li>
 								</ul>
 							</nav>
@@ -729,7 +729,7 @@
 	</div>
 </div>
  -->
-	<script src="js/app.min.js?_v=20211230105057"></script>
+	<script src="js/app.min.js?_v=20220101011926"></script>
 </body>
 
 </html>
