@@ -189,7 +189,6 @@ body {
 
 .title {
   font-weight: 700;
-  font-size: 1.875rem;
   line-height: 1.4;
   letter-spacing: 0.1875rem;
   text-transform: uppercase;
@@ -534,12 +533,15 @@ textarea.input {
   left: 0;
   z-index: 51;
   background-color: rgba(0, 0, 0, 0.7);
-  padding: 100px 15px;
+  padding-left: 15px;
+  padding-right: 15px;
   opacity: 0;
   visibility: hidden;
   -webkit-transition: all 0.8s ease 0s;
   -o-transition: all 0.8s ease 0s;
   transition: all 0.8s ease 0s;
+  overflow-y: auto;
+  overflow-x: hidden;
 }
 
 .order-popup__container {
@@ -559,14 +561,14 @@ textarea.input {
 
 .order-popup__button {
   text-align: right;
-  position: relative;
 }
 
 .order-popup__close {
-  position: absolute;
-  right: 0px;
-  top: 0px;
   color: #c33c42;
+}
+
+.order-popup__header {
+  text-align: center;
 }
 
 .open {
@@ -2979,6 +2981,18 @@ textarea.input {
 }
 
 @media (min-width: 75em) {
+  .title {
+    font-size: 1.875rem;
+  }
+
+  .order-popup {
+    padding-top: 6.25rem;
+  }
+
+  .order-popup {
+    padding-bottom: 6.25rem;
+  }
+
   .order-popup__body {
     padding-top: 4.375rem;
   }
@@ -3508,6 +3522,18 @@ textarea.input {
 }
 
 @media (max-width: 20em) {
+  .title {
+    font-size: 1.25rem;
+  }
+
+  .order-popup {
+    padding-top: 0.9375rem;
+  }
+
+  .order-popup {
+    padding-bottom: 0.9375rem;
+  }
+
   .order-popup__body {
     padding-top: 1.875rem;
   }
@@ -3525,7 +3551,7 @@ textarea.input {
   }
 
   .order-popup__button:not(:last-child) {
-    margin-bottom: 1.25rem;
+    margin-bottom: 1.875rem;
   }
 
   .header-block:not(:last-child) {
@@ -4067,6 +4093,18 @@ textarea.input {
 }
 
 @media (min-width: 20em) and (max-width: 75em) {
+  .title {
+    font-size: calc(1.25rem + 0.625 * (((100vw - 20rem)) / ((55))));
+  }
+
+  .order-popup {
+    padding-top: calc(0.9375rem + 5.3125 * (((100vw - 20rem)) / ((55))));
+  }
+
+  .order-popup {
+    padding-bottom: calc(0.9375rem + 5.3125 * (((100vw - 20rem)) / ((55))));
+  }
+
   .order-popup__body {
     padding-top: calc(1.875rem + 2.5 * (((100vw - 20rem)) / ((55))));
   }
@@ -4084,7 +4122,7 @@ textarea.input {
   }
 
   .order-popup__button:not(:last-child) {
-    margin-bottom: calc(1.25rem + 1.875 * (((100vw - 20rem)) / ((55))));
+    margin-bottom: calc(1.875rem + 1.25 * (((100vw - 20rem)) / ((55))));
   }
 
   .header-block:not(:last-child) {
