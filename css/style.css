@@ -4769,6 +4769,11 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item:not(.lg-zoomable).lg-co
             justify-content: center;
   }
 
+  .block-main__bg-img {
+    -o-object-position: center;
+       object-position: center;
+  }
+
   .catalog__items {
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     grid-auto-rows: 1fr;
