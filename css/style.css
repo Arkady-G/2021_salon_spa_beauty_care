@@ -1745,9 +1745,6 @@ textarea.input {
           flex-direction: column;
 }
 
-.no-webp .mainpage__block-main{
-  background: url("../img/bg/main_bg.jpg") center/cover no-repeat; }
-
 .mainpage__block-main {
   position: relative;
 }
@@ -5521,8 +5518,6 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item:not(.lg-zoomable).lg-co
     background: #c33c42;
   }
 }
-
-.webp .mainpage__block-main{ background: url(../img/bg/main_bg.webp) center/cover no-repeat; }
 
 @media (max-width: 47.99875em){
 
