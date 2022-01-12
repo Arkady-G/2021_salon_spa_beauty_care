@@ -327,13 +327,6 @@ body {
   min-width: 0;
 }
 
-/*
-(i) Стили будут применяться ко 
-всем классам содержащим *__container
-Например header__container, main__container и т.д.
-Снипет (HTML): cnt
-*/
-
 [class*=__container] {
   max-width: 73.125rem;
   -webkit-box-sizing: content-box;
@@ -1629,7 +1622,7 @@ textarea.input {
           justify-content: flex-end;
 }
 
-.footer-top__social-link {
+.footer-top__item-social {
   position: relative;
   -webkit-box-flex: 0;
       -ms-flex: 0 0 8%;
@@ -1751,6 +1744,9 @@ textarea.input {
       -ms-flex-direction: column;
           flex-direction: column;
 }
+
+.no-webp .mainpage__block-main{
+  background: url("../img/bg/main_bg.jpg") center/cover no-repeat; }
 
 .mainpage__block-main {
   position: relative;
@@ -2608,10 +2604,10 @@ textarea.input {
 
 .contact__img {
   position: absolute;
-  top: 0px;
+  top: 30px;
   right: 3%;
-  height: 100%;
-  width: 100%;
+  height: 70%;
+  width: 70%;
   -o-object-fit: cover;
      object-fit: cover;
   -webkit-transform: scale(1.1);
@@ -5525,6 +5521,8 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item:not(.lg-zoomable).lg-co
     background: #c33c42;
   }
 }
+
+.webp .mainpage__block-main{ background: url(../img/bg/main_bg.webp) center/cover no-repeat; }
 
 @media (max-width: 47.99875em){
 
