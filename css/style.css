@@ -620,6 +620,7 @@ textarea.input {
   transition: all 0.8s ease 0s;
   overflow-y: auto;
   overflow-x: hidden;
+  background: #f3f1ec;
 }
 
 .block-popup__container {
